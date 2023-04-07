@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport content=width=device-width", initial-scale="1.0">
+        <title>Profile UI</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="dob" href="dob.js">
+    </head>
+<body>
+    <header>
+        <div class="topnav">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+        </div>
+        <div class="title">
+            <h2>Sample Website</h2>
+        </div>
+    </header>
+        <div class="form" style="border:solid" >
+            <h2> Create a Profile</h2>
+            <form action="" method="POST">
+                First Name <input type="fname" class="input-field" placeholder="First Name", required="required"> <br>
+                Last Name <input type="lname" class="input-field" placeholder="Last Name" ,required="required"><br>
+                <form class = "container">
+                    <label >Date of Birth </label>
+                    <SELECT id ="year" name = "yyyy" placeholder="Year" onchange="change_year(this)">
+                    </SELECT>
+                    <SELECT  id ="month" name = "mm" placeholder="Month" onchange="change_month(this)">
+                    </SELECT>
+                    <SELECT id ="day" name = "dd" placeholder="Date" >
+                    </SELECT>
+                  <br />
+                 <br>Gender 
+                <input type='radio', placeholder='male', name='gender', required='required'>Male </input>
+                <input type='radio', placeholder='female', name='gender', required='required'>Female </input>
+                <br>  <input type='button' class="btn" value="SAVE"> 
+            </form>
+        </div>
+    <div class="accordian">
+        <div class="card">
+          <div class="card-header">
+            <h4> Quicklinks 1 <span class="fa fa-minus"> </span></h4>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li> Link 1</li>
+              <li> Link 2</li>
+              <li> Link 3</li>
+              <li> Link 4</li>
+              <li> Link 5</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4> Quicklinks 2 <span class="fa fa-plus"> </span></h4>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li> Link 1</li>
+              <li> Link 2</li>
+              <li> Link 3</li>
+              <li> Link 4</li>
+              <li> Link 5</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4> Quicklinks 3 <span class="fa fa-plus"> </span></h4>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li> Link 1</li>
+              <li> Link 2</li>
+              <li> Link 3</li>
+              <li> Link 4</li>
+              <li> Link 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
